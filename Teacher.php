@@ -3,13 +3,13 @@
 class Teacher extends Person
 {
 
-  function __construct()
+  function __construct($fname=null, $lname=null, $year=null, $subject=null, $address=null)
   {
-    //$this->firstName=$fname;
-    //$this->lastName=$lname;
-    //$this->yearOfBirth=$year;
-    //$this->teachingSubjects=array();
-    //$this->department=$address;
+    $this->firstName=$fname;
+    $this->lastName=$lname;
+    $this->yearOfBirth=$year;
+    $this->teachingSubjects=$subject;
+    $this->department=$address;
   }
 
   private $teachingSubjects=array();
@@ -34,8 +34,6 @@ class Teacher extends Person
       ('Calculus')
       );
 
-      
-        //array_push($this->selectedCourses,$selectedCourses);
         $this->teachingSubjects = $teachingSubjects;
     }
 

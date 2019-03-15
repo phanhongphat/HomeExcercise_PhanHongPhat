@@ -34,8 +34,6 @@ class Students extends Person
       ('Calculus')
       );
 
-      
-        //array_push($this->selectedCourses,$selectedCourses);
         $this->selectedCourses = $selectedCourses;
     }
 
